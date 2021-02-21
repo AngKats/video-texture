@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+   
+    <title>Video-Texture</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css"
+</head>
+
+        <!-- you should probably put some google analytics / meta bits and pieces
+	    here : PRH 
+    <meta property="og:title" content="Paul Hill's Website"> etc.
+      <script async src="https://www.googletagmanager.com/gtag/js?id=??????????"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', '??????????');
+  </script>
+    -->
+
+<body id="page-top">
+    <div class="page-container">
+        <div class="inner">
+            <div class="container">
+                <div class="row">
+                    <div class="row vertical-align">
+  
+                        <div class="col-md-10">
+                            <div class="title">
+                                <h1>Understanding Video Texture: a Basis for Video Compression</h1>
+                                <div class="container-sm">
+                                    <div class="row justify-content-md-center">
+                                        <div class="col-sm-auto">
+                                            <p><a href='http://angkats.github.io'>Angeliki Katsenou</a></p>
+                                            <p>University of Bristol</p>
+                                        </div>
+                                        <div class="col-sm-auto">
+                                            <p><a href='http://www.bristol.ac.uk/engineering/people/david-r-bull/index.html'>David R. Bull</a></p>
+                                            <p>University of Bristol</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+			<div class="col-md-2">
+			    <p><a href='https://www.bristol.ac.uk'><img src="uob-logo.svg" width="100%" height="20%" alt=""></a></p>
+			    <p><a href='https://www.bristol.ac.uk/vision-institute'><img src="bvilogo.svg" width="100%" height="20%" alt=""></a></p>
+			     <p><a href='https://vilab.blogs.bristol.ac.uk'><img src="VIL_logo.svg" width="100%" height="20%" alt=""></a></p>
+			    
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-md">
+                <h2>About</h2>
+                <p> Although recent video coding standards such as HEVC, VP9, and AV1 have achieved impressive compression gains with significantly better rate-quality performance compared to their predecessors, 
+                    they are all challenged by certain types of content, in particular complex dynamic textures. The VVC standard adopts a similar coding architecture and, while offering overall 
+                    coding gains, it still exhibits the same limitations. A recent statistical analysis of HEVC reference software performance has shown that the codec handles various types of texture very 
+                    differently in terms of coding modes and bit rate. Knowledge about the compression characteristics of video content prior to encoding can be exploited in various situations, including: off-line 
+                    rate-quality optimisation of video-on-demand streamed content, multi-pass encoding, rate control, statistical multiplexing, in loop rate-distortion optimisation. </p>
+                <p>  Within this project we have defined the different types of video texture, we have analysed their spatio-temporal features, we studied their coding perfromance and statistics.
+                    The collection of papers below provide all related studies. We also created a dataset that helped us with these studies, BVI-HomTex.
+                </p>
+		<dl>
+			<dt>Funders</dt>
+			<dd>FP7 Marie-Curie Integrated Training Network PROVISION</dd>
+			<dt>Collaborators</dt>
+			<dd>Fraunhofer HHI, BBC, RWTH Aachen University, University of Nantes</dd>
+		</dl>
+            <!-- </div>
+            <hr />
+            <div class="container-md">
+                <h2>Overview</h2>
+                <p> Although recent video coding standards such as HEVC, VP9, and AV1 have achieved impressive compression gains with significantly better rate-quality performance compared to their predecessors, 
+                    they are all challenged by certain types of content, in particular complex dynamic textures. The VVC standard adopts a similar coding architecture and, while offering overall 
+                    coding gains, it still exhibits the same limitations. A recent statistical analysis of HEVC reference software performance has shown that the codec handles various types of texture very 
+                    differently in terms of coding modes and bit rate. Knowledge about the compression characteristics of video content prior to encoding can be exploited in various situations, including: off-line 
+                    rate-quality optimisation of video-on-demand streamed content, multi-pass encoding, rate control, statistical multiplexing, in loop rate-distortion optimisation. </p>
+                <p>  Within this project we have defined the different types of video texture, we have analysed their spatio-temporal features, we studied their coding perfromance and statistics.
+                    The collection of papers below provide all related studies. We also created a dataset that helped us with these studies, BVI-HomTex.
+                </p>
+            </div> -->
+            <hr />
+            <div class="container-md">
+                <h2 id="poster">Visuals</h2>
+                <p><a href="ExamplesVideoTexture.png"><img src="ExamplesVideoTexture.png" alt="Examples of Video Texture" width=300 class="center" /></a></p>
+            </div>
+            <hr />
+            <div class="container-md">
+                <h2 id="downloads">Downloads</h2>
+                <ul>
+                    <li>Papers 
+                        <ul>
+                        <li> A. V. Katsenou, M. Afonso, and D. R. Bull, "Study of Compression Statistics and Prediction of Rate-Distortion Curves for Video Texture". <a href="https://arxiv.org/abs/2102.04167">[arXiv]</a> </li>
+                        <li>A. V. Katsenou, Th. Ntasios, M. Afonso, D. Agrafiotis and D. R. Bull, "Understanding video texture — A basis for video compression," 2017 IEEE 19th International Workshop on Multimedia Signal Processing. <a href="https://ieeexplore.ieee.org/document/8122252">[Paper]</a> </li>
+                        <li>A. V. Katsenou, M. Afonso, D. Agrafiotis and D. R. Bull, "Predicting video rate-distortion curves using textural features," 2016 Picture Coding Symposium. <a href="https://ieeexplore.ieee.org/document/7906313">[Paper]</a> </li>
+                        <li>M. Afonso, A. V. Katsenou, F. Zhang, D. Agrafiotis and D. R. Bull, "Video texture analysis based on HEVC encoding statistics," 2016 Picture Coding Symposium. <a href="https://ieeexplore.ieee.org/document/7906312">[Paper]</a> </li>
+                    </ul>
+                    </li>
+                    <li>Dataset <a href="https://data.bristol.ac.uk/data/dataset/1h2kpxmxdhccf1gbi2pmvga6qp">[VIL-HomTex]</a></li>
+                </ul>
+            </div>
+            <!-- <div class="container-md">
+                <h2>Code (on Github)</h2>
+                <ul>
+                    <li><a href='https://github.com/csprh/extractData'>Matlab Based Code for DataCube Extraction</a> </li>
+                    <li><a href='https://github.com/csprh/modelHAB'>Python code for HAB classification</a> </li>
+                </ul>
+            </div> -->
+                <!-- <div class="container-md">
+                    <h2>Citation</h2>
+                    <pre class="citation">
+                    @article{hill2020habnet,
+                    title={HABNet: Machine Learning, Remote Sensing-Based Detection of Harmful Algal Blooms},
+                    author={Hill, Paul R and Kumar, Anurag and Temimi, Marouane and Bull, David R},
+                    journal={IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing},
+                    volume={13},
+                    pages={3229--3239},
+                    year={2020},
+                    publisher={IEEE}}</pre>
+                </div> -->
+
+        </div>
+    </div>
+</body>
+
+</html>
